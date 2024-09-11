@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Service</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #f1f1f1;
+        }
+
+        #selected-item {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .next-button {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .next-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>TikTok Service</h2>
+        <ul id="monetization-list">
+            <li onclick="showItem('1K (NON-DROP) FOLLOWERS = 999RS')">1K (NON-DROP) FOLLOWERS</li>
+            <li onclick="showItem('2K (NON-DROP) FOLLOWERS = 1999RS')">2K (NON-DROP) FOLLOWERS</li>
+            <li onclick="showItem('5K (NON-DROP) FOLLOWERS = 5999RS')">5K (NON-DROP) FOLLOWERS</li>
+            <li onclick="showItem('10K (NON-DROP) FOLLOWERS = 12999RS')">10K (NON-DROP) FOLLOWERS</li>
+            <li onclick="showItem('1K LIKES (NON-DROP) = 999RS')">1K LIKES (NON-DROP)</li>
+            <li onclick="showItem('2K LIKES (NON-DROP) = 1999RS')">2K LIKES (NON-DROP)</li>
+            <li onclick="showItem('5K LIKES (NON-DROP) = 4999RS')">5K LIKES (NON-DROP)</li>
+            <li onclick="showItem('5K LIKES (NON-DROP) = 9999RS')">5K LIKES (NON-DROP)</li>
+            <li onclick="showItem('1K VIEWS (NON-DROP) = 300RS')">1K VIEWS (NON-DROP)</li>
+            <li onclick="showItem('2K VIEWS (NON-DROP) = 600RS')">2K VIEWS (NON-DROP)</li>
+            <li onclick="showItem('5K VIEWS (NON-DROP) = 2299RS')">5K VIEWS (NON-DROP)</li>
+            <li onclick="showItem('10K VIEWS (NON-DROP) = 3999RS')">10K VIEWS (NON-DROP)</li>
+        </ul>
+
+        <div id="selected-item"><strong>Click on an item to see the price</strong></div>
+        
+        <a href="payment-esewa.html" class="next-button">Next</a>
+    </div>
+
+    <script>
+        function showItem(item) {
+            document.getElementById('selected-item').textContent = item;
+        }
+    </script>
+
+</body>
+</html>
